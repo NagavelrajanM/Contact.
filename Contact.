@@ -1,0 +1,22 @@
+import java.util.*;
+class Contact
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> con = new ArrayList<String>();
+        con.add("A");
+        con.add("B");
+        con.add("C");
+        con.add("D");
+        con.add("E");
+
+        for (String c : con)
+        {
+            System.out.println("Contact List: " + con);
+        }
+
+        System.out.println("Retrieve: " + con.get(0));
+        System.out.println("Retrieve: " + con.set(4, "OOPS"));
+        System.out.println("Delete: " + con.remove(1));
+    }
+}
